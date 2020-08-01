@@ -63,6 +63,8 @@ img {
   align-items: center;
   background-color: transparent;
   cursor: pointer;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .hero button {
   display: block;
@@ -74,6 +76,7 @@ img {
   padding: 10px 32px 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 250ms linear;
   cursor: pointer;
 }
 .button.primary,
@@ -103,19 +106,6 @@ img {
 .site-nav .link.curent {
   color: var(--accent-color);
 }
-.button:hover,
-.button:focus,
-.container-button-item .button:hover,
-.container-button-item .button:focus {
-  transition: color 250ms linear;
-  transition: background-color 250ms linear;
-}
-.adress-footer:hover,
-.adress-footer:focus,
-.site-nav .link:hover,
-.site-nav .link:focus {
-  transition: color 250ms linear;
-}
 /* Site-nav  */
 .site-nav {
   display: flex;
@@ -142,6 +132,8 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: color 250ms linear;
+  transition: fill 250ms linear;
 }
 .curent::after {
   display: block;
@@ -165,11 +157,9 @@ img {
 }
 .adress-item a:hover {
   color: var(--accent-color);
-  transition: color 250ms linear;
 }
 .adress-item a:hover svg {
   fill: var(--accent-color);
-  transition: fill 250ms linear;
 }
 .adress-link a,
 .adress-footer {
@@ -338,17 +328,17 @@ img {
   margin-right: 10px;
 }
 .container-sosial-comand-link:hover {
-  transition: background-color 250ms linear;
+  /*  transition: background-color 250ms linear;*/
   background-color: var(--accent-color);
 }
 .container-sosial-comand-link:hover .container-sosial-comand-svg {
-  transition: fill 250ms linear;
   fill: #ffffff;
 }
 .container-sosial-comand-svg {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 2250ms linear;
 }
 .container-sosial-comand-link {
   display: flex;
@@ -358,6 +348,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: background-color 2250ms linear;
 }
 /* Секция постоянные клиенты */
 .client {
@@ -373,29 +364,38 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
+.container-clients-item-link {
+  transition: border-color 250ms linear;
+}
 .svg-icon-logo1 {
   width: 44px;
   height: 49px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo2 {
   width: 40px;
   height: 52px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo3 {
   width: 41px;
   height: 42px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo4 {
   width: 80px;
   height: 42px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo5 {
   width: 59px;
   height: 42px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo6 {
   width: 88.5px;
   height: 45px;
+  transition: fill 250ms linear;
 }
 .svg-icon-logo1,
 .svg-icon-logo2,
@@ -406,7 +406,6 @@ img {
   fill: #afb1b8;
 }
 .container-clients-item:hover {
-  transition: border-color 250ms linear;
   border-color: var(--accent-color);
 }
 .container-clients-item:hover .svg-icon-logo1,
@@ -415,7 +414,6 @@ img {
 .container-clients-item:hover .svg-icon-logo4,
 .container-clients-item:hover .svg-icon-logo5,
 .container-clients-item:hover .svg-icon-logo6 {
-  transition: fill 250ms linear;
   fill: var(--accent-color);
 }
 .container-clients-item:not(:last-child) {
@@ -434,6 +432,7 @@ img {
 }
 .adress-footer {
   color: #afb1b8;
+  transition: color 250ms linear;
 }
 .div-text-footer,
 .div-text-footer-write {
@@ -443,7 +442,6 @@ img {
   text-align: start;
 }
 .container-sosial-item-link:hover {
-  transition: background-color 250ms linear;
   background-color: var(--accent-color);
 }
 .container-sosial-item-svg {
@@ -460,6 +458,7 @@ img {
   align-items: center;
   border-radius: 50%;
   margin-right: 10px;
+  transition: background-color 250ms linear;
 }
 .logo-footer .container {
   display: flex;
@@ -470,12 +469,17 @@ img {
 .container-footer-adress {
   margin-top: 60px;
   margin-bottom: 60px;
+  text-align: left;
+}
+.container-footer-adress a {
+  text-decoration: none;
 }
 .footer-adress {
+  margin-bottom: 9px;
   margin-top: 20px;
 }
 .footer-adress-mail {
-  padding: 9px 0 9px 0;
+  margin-bottom: 9px;
 }
 .container-social {
   margin-top: 20px;
@@ -538,6 +542,8 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   color: var(--title-text-color);
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .container-button-item:not(:last-child) {
   margin-right: 52px;
